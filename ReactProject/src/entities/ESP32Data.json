@@ -1,0 +1,25 @@
+{
+  "name": "ESP32Data",
+  "type": "object",
+  "properties": {
+    "id": { "type": "string" },
+    "table_number": { "type": "number", "default": 1 },
+    "player1_score": { "type": "number", "default": 0 },
+    "player2_score": { "type": "number", "default": 0 },
+    "game_time_seconds": { "type": "number", "default": 0 },
+    "puck_speed": { "type": "number", "default": 0 },
+    "is_active": { "type": "boolean", "default": false },
+    "last_goal_by": {
+      "type": "string",
+      "enum": ["player1", "player2", "none"],
+      "default": "none"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["idle", "scheduled", "in_progress", "completed"],
+      "default": "idle"
+    },
+    "updated_at": { "type": "string" }
+  },
+  "required": ["table_number", "player1_score", "player2_score"]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Payment",
+  "type": "object",
+  "properties": {
+    "user_email": { "type": "string" },
+    "amount": { "type": "number" },
+    "payment_source": { "type": "string", "enum": ["subscription", "bonus", "regular"] },
+    "payment_method": { "type": "string", "enum": ["credit_card", "cash", "bit", "paypal", "subscription", "bonus"] },
+    "type": { "type": "string", "enum": ["subscription", "bonus", "one_time"] },
+    "game_id": { "type": "string" },
+    "subscription_id": { "type": "string" },
+    "bonus_id": { "type": "string" },
+    "status": { "type": "string", "enum": ["pending", "completed", "refunded"], "default": "completed" }
+  },
+  "required": ["user_email", "amount", "payment_source", "payment_method", "type"]
+}

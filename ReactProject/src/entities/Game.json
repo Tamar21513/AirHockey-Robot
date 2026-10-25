@@ -1,0 +1,21 @@
+{
+  "name": "Game",
+  "type": "object",
+  "properties": {
+    "date": { "type": "string", "format": "date", "description": "Game date" },
+    "time_slot": { "type": "string", "description": "Game time" },
+    "skill_level": { "type": "number", "enum": [1, 2, 3, 4], "description": "Skill level selected on the ESP32 screen" },
+    "game_mode": { "type": "string", "enum": ["first_to_7", "timer_3_minutes"], "description": "Game mode selected on the ESP32 screen" },
+    "payment_source": { "type": "string", "enum": ["subscription", "bonus", "regular"], "description": "Payment source" },
+    "payment_method": { "type": "string", "enum": ["credit_card", "cash", "bit", "paypal", "subscription", "bonus"], "description": "Payment method" },
+    "bonus_id": { "type": "string", "description": "Bonus ID when the game was booked with a bonus" },
+    "status": { "type": "string", "enum": ["scheduled", "in_progress", "completed", "cancelled"], "default": "scheduled" },
+    "player1_email": { "type": "string" },
+    "player2_email": { "type": "string" },
+    "player1_score": { "type": "number", "default": 0 },
+    "player2_score": { "type": "number", "default": 0 },
+    "winner_email": { "type": "string" },
+    "table_number": { "type": "number" }
+  },
+  "required": ["date", "time_slot", "player1_email", "payment_source"]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "ScoreRecord",
+  "type": "object",
+  "properties": {
+    "user_email": { "type": "string" },
+    "user_name": { "type": "string" },
+    "game_id": { "type": "string" },
+    "score": { "type": "number" },
+    "is_high_score": { "type": "boolean", "default": false },
+    "bonus_awarded": { "type": "number", "default": 0 },
+    "skill_level": { "type": "string", "enum": ["beginner", "intermediate", "advanced", "pro"] }
+  },
+  "required": ["user_email", "game_id", "score"]
+}

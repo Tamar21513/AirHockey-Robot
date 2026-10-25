@@ -1,0 +1,14 @@
+{
+  "name": "Subscription",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string" },
+    "type": { "type": "string", "enum": ["monthly", "quarterly", "yearly", "one_time"] },
+    "price": { "type": "number" },
+    "games_included": { "type": "number" },
+    "description": { "type": "string" },
+    "is_active": { "type": "boolean", "default": true },
+    "benefits": { "type": "string" }
+  },
+  "required": ["name", "type", "price"]
+}

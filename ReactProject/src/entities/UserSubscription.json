@@ -1,0 +1,15 @@
+{
+  "name": "UserSubscription",
+  "type": "object",
+  "properties": {
+    "user_email": { "type": "string" },
+    "subscription_id": { "type": "string" },
+    "subscription_name": { "type": "string" },
+    "start_date": { "type": "string", "format": "date" },
+    "end_date": { "type": "string", "format": "date" },
+    "games_remaining": { "type": "number" },
+    "status": { "type": "string", "enum": ["active", "expired", "cancelled"], "default": "active" },
+    "payment_method": { "type": "string", "enum": ["credit_card", "cash", "bit", "paypal"] }
+  },
+  "required": ["user_email", "subscription_id"]
+}

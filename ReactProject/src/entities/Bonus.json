@@ -1,0 +1,14 @@
+{
+  "name": "Bonus",
+  "type": "object",
+  "properties": {
+    "user_email": { "type": "string" },
+    "user_name": { "type": "string" },
+    "type": { "type": "string", "enum": ["high_score", "streak", "tournament", "loyalty"] },
+    "amount": { "type": "number" },
+    "description": { "type": "string" },
+    "game_id": { "type": "string" },
+    "is_claimed": { "type": "boolean", "default": false }
+  },
+  "required": ["user_email", "type", "amount"]
+}

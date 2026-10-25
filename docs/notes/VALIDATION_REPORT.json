@@ -1,0 +1,31 @@
+{
+  "validation": {
+    "confirmed_y_pins": true,
+    "safe_pwm_channels": true,
+    "dynamic_xy": true,
+    "same_xy_servo": true,
+    "retarget": true,
+    "move_get_post": true,
+    "robot_status": true
+  },
+  "arduino_files": [
+    "FuncationCamera.ino",
+    "FuncationDCMotor.ino",
+    "FuncationDistanceSensor.ino",
+    "FuncationFireBase.ino",
+    "FuncationGameMenu.ino",
+    "FuncationLCD.ino",
+    "FuncationLed.ino",
+    "FuncationPuckTracking.ino",
+    "FuncationReact.ino",
+    "FuncationRobotMove.ino",
+    "FuncationServo.ino",
+    "FuncationSpeaker.ino",
+    "FuncationTouchSensor.ino",
+    "Global.h",
+    "AirHockeyMain.ino"
+  ],
+  "function_count": 159,
+  "duplicate_functions": {},
+  "note": "Static consistency checks passed. Arduino CLI and the hardware libraries are not installed in this runtime, so a real ESP32 compilation was not performed."
+}

@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "stationary_field_in_esp": true,
+    "stationary_puck_action": true,
+    "same_xy_servo": true,
+    "servo_request_latched": true,
+    "right_side_roi_extended": true,
+    "stationary_python_fallback": true,
+    "stationary_json_sent": true
+  },
+  "python_syntax": "passed",
+  "arduino_brace_check": "passed",
+  "note": "A real ESP32 compile was not available in this runtime."
+}

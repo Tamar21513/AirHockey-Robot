@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "advance_distance_defined": true,
+    "advance_speed_defined": true,
+    "left_side_moves_positive_x": true,
+    "motor_and_servo_overlap": true,
+    "current_x_updated": true
+  },
+  "arduino_brace_check": "passed",
+  "note": "Static checks passed. A real ESP32 hardware compilation was not available."
+}
